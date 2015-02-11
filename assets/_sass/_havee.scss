@@ -44,7 +44,6 @@ h1, h2, h3, h4 {
 }
 h1 {
 	font-size: $font-size * 2;
-	font-size: 32px;
 	font-style: normal;
 	padding-top: 0.4em;
 	padding-bottom: 0.4em;
@@ -144,6 +143,7 @@ time.small {
   border: 1px solid rgba($base08, $alpha);
   box-shadow: 0 1px 10px rgba($base08, $alpha * 2);
   .title {
+  	font-size: 36px;
 	margin: 0.4em 0 0.2em 0;
 	padding: 0 0 0.2em 0;
 	color: rgb(0, 0, 0);
