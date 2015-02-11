@@ -2,8 +2,8 @@
 layout: post
 title: git简明笔记
 category: 工具
-tags: git
-description:git简明笔记 
+tags: git,tools
+description: git简明笔记
 ---
 
 # git quick reference #
