@@ -1,17 +1,16 @@
 # Site settings
-title: "Jekyll template"
-url: "//ihavee.github.io"
+title: "小明的学习笔记"
+url: "//blog.cn-php.com/"
 highlighter: pygments
 paginate: 5
 author:
-    name: Havee
-    github: Ihavee
+    name: 小明
+    github: hepanming007
     email:
-    gitcafe: Havee
     twitter:
     facebook:
     googleplus:
-    weibo: Havanna
+    weibo: 
 atom_path: /atom.xml
 rss_path: /rss.xml
 
@@ -38,7 +37,5 @@ comments:
             admin: 0
             length: 26
 # 网站统计
-analytics:
-    baidu:
-        siteid:                             # 百度统计 js 代码后的字符串
+
 
