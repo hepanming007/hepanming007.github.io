@@ -27,15 +27,9 @@ sass:
 
 # comment
 comments:
-    duoshuo:
-        name:                               # short name
-        rcomments:
-            num: 10
-            avatar: 0
-            time: 0
-            title: 0
-            admin: 0
-            length: 26
+    changyan:
+        status:1                           
+
 # 网站统计
 
 
