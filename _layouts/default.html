@@ -26,19 +26,8 @@
     <script src="{{ site.assets_path }}/js/webcore.js"></script>
     <script src="{{ site.assets_path }}/js/lrtk.js"></script>
     {% include baidu-analytics.html %}
-    {% if site.comments.duoshuo.name %}
+    {% if site.comments.changyan.status %}
     <!-- duoshuo Begin -->
-    <script type="text/javascript">
-      var duoshuoQuery = {short_name:"{{ site.comments.duoshuo.name }}"};
-      (function() {
-        var ds = document.createElement('script');
-        ds.type = 'text/javascript';ds.async = true;
-        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-        ds.charset = 'UTF-8';
-        (document.getElementsByTagName('head')[0] ||
-        document.getElementsByTagName('body')[0]).appendChild(ds);
-      })();
-    </script>
     <!-- duoshuo End -->
     {% endif %}
     <a href="#0" class="cd-top">Top</a>
