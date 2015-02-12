@@ -16,12 +16,19 @@
         <div class="row clearfix">
           {{ content }}
         </div>
+      <div id="post__toc-trigger">
+        <div id="post__toc">
+          <span id="post__toc-title">Table of Contents</span>
+          <ul id="post__toc-ul"></ul>
+        </div>
+      </div>
       </article>
 
       {% include footer.html %}
     </div>
 
     <script src="{{ site.assets_path }}/js/jquery.min.js"></script>
+    <script src="{{ site.assets_path }}/js/jquery.pjax.js"></script>
     <script src="{{ site.assets_path }}/js/bootstrap.min.js"></script>
     <script src="{{ site.assets_path }}/js/webcore.js"></script>
     <script src="{{ site.assets_path }}/js/lrtk.js"></script>
