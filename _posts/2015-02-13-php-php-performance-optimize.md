@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 性能优化之PHP优化笔记
-category：php
-tags：php
+category: php
+tags: php
 description: 性能优化,PHP优化笔记
 ---
  
