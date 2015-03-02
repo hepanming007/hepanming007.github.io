@@ -22,7 +22,8 @@
 body {
   font-size: $font-size;
   line-height: $line-height * 1.6;
-  color: lighten($base08, 10%);
+  font-family: 'Lato',Calibri,Arial,Microsoft YaHei,sans-serif;
+  color: #222;
   background: darken($base07, 10%);
   @include sans-serif;
   * {
@@ -42,48 +43,7 @@ h1, h2, h3, h4 {
 	font-weight: normal;
 	font-style: normal;
 }
-h1 {
-	font-size: $font-size * 2;
-	font-style: normal;
-	padding-top: 0.4em;
-	padding-bottom: 0.4em;
-	padding-left: 16px;
-	background-color: rgb(208, 208, 255);
-	border-radius: 8px;
-	border: solid rgb(0, 0, 128) 1px;
-}
 
-
-h2 {
-font-size: $font-size * 1.75;
-padding-top: 0.4em;
-padding-bottom: 0.4em;
-padding-left: 0.8em;
-padding-right: 0.8em;
-background-color: rgb(208, 208, 255);
-border-radius: 8px;
-border: solid rgb(160, 160, 160) 1px;
-}
-
-h3 {
-  font-size: $font-size * 1.5;
-  color: lighten($base03, 10%);
-}
-
-h4 {
-  font-size: $font-size * 1.5;
-  color: $base04;
-}
-
-h5 {
-  font-size: $font-size * 1.25;
-  color: darken($base05, 15%);
-}
-
-h6 {
-  font-size: $font-size * 1.25;
-  color: darken($base06, 30%);
-}
 
 strong {
   line-height: $line-height * 1.8;
