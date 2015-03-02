@@ -102,6 +102,9 @@ time.small {
   background-color: rgba($base07, $alpha * 5);
   border: 1px solid rgba($base08, $alpha);
   box-shadow: 0 1px 10px rgba($base08, $alpha * 2);
+  max-width: 800px;
+  padding: 50px 80px;
+  margin: 50px auto 30px auto;
   .title {
 	margin: 0.4em 0 0.2em 0;
 	padding: 0 0 0.2em 0;
