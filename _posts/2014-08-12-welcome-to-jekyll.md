@@ -50,5 +50,11 @@ int main(int argc, char **argv)
 
 
 <pre class="prettyprint">
-echo "aaa";
+/* hello world demo */
+#include <stdio.h>
+int main(int argc, char **argv)
+{
+        printf("Hello, World!\n");
+        return 0;
+}
 </pre>
