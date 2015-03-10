@@ -48,3 +48,7 @@ int main(int argc, char **argv)
 |row3text1|row3text2|row3text3|row3text4
 |row4text1|row4text2|row4text3|row4text4
 
+
+<pre class="prettyprint">
+echo "aaa";
+</pre>
