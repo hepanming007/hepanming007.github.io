@@ -85,7 +85,7 @@ body {
 a {
   color: blue;
   &:hover, &:focus {
-    color: yellow;
+    color: red;
     text-decoration: none;
   }
 }
