@@ -31,9 +31,9 @@ body {
 }
 
 a {
-  color: darken($base05, 15%);
+  color: blue;
   &:hover, &:focus {
-    color: darken($base05, 30%);
+    color: yellow;
     text-decoration: none;
   }
 }
