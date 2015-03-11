@@ -83,7 +83,7 @@ for($i=0；$i<$strlength;$i++)
 {
 	// do something...
 }
- </pre>
+</pre>
  
 **4-6 减少计算密集型业务** 
 		
