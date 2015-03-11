@@ -84,6 +84,7 @@ for($i=0；$i<$strlength;$i++)
 	// do something...
 }
  </pre>
+ 
 **4-6 减少计算密集型业务** 
 		
 		大批量日志分析
