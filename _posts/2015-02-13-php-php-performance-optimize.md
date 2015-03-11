@@ -76,13 +76,12 @@ description: 性能优化,PHP优化笔记
 	 	利用unset及时释放不使用的内存
 **4-5 避免在循环内做运算**  
   <pre class="prettyprint prettyprinted">
-	<?php
-	$str = 'hello world';
-	$strlength = strlen($str);
-	for($i=0；$i<$strlength;$i++)
-	{
-		// do something...
-	}
+$str = 'hello world';
+$strlength = strlen($str);
+for($i=0；$i<$strlength;$i++)
+{
+	// do something...
+}
    </pre>
 **4-6 减少计算密集型业务** 
 		
