@@ -31,10 +31,10 @@
               <a href="{{ site.url }}/page{{ paginator.previous_page }}">&lt; Previous</a>
             {% endif %}
           {% else %}
-            Previous
+            
           {% endif %}
               {% if paginator.page == 1 %}
-                <span class="current-page">1</span>
+                <span class="current">1</span>
               {% else %}
                 <a href="{{ site.url }}">1</a>
               {% endif %}
@@ -48,7 +48,7 @@
           {% if paginator.next_page %}
             <a href="{{ site.url }}/page{{ paginator.next_page }}">Next &gt;</a>
           {% else %}
-            Next
+            
           {% endif %}
         </div><!-- /.pagination -->
       </article>
