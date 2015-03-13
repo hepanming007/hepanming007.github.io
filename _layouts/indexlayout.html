@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body onload='prettyPrint();'>
+    <div class="container" style="width: 980px;">
+      {% include header.html %}
+
+      <article class="wrapper">
+        <div id="search-loader" class="img-wrap">
+          <div class="loading">
+            <img src="{{ site.assets_path }}/img/loading.png">
+          </div>
+        </div>
+        <div class="row clearfix">
+          {{ content }}
+        </div>
+      <div id="post__toc-trigger">
+        <div id="post__toc">
+          <span id="post__toc-title">Table of Contents</span>
+          <ul id="post__toc-ul"></ul>
+        </div>
+      </div>
+      </article>
+
+      {% include footer.html %}
+    </div>
+
+    <script src="{{ site.assets_path }}/js/jquery.min.js"></script>
+    <script src="{{ site.assets_path }}/js/jquery.pjax.js"></script>
+    <script src="{{ site.assets_path }}/js/bootstrap.min.js"></script>
+    <script src="{{ site.assets_path }}/js/webcore.js"></script>
+    <script src="{{ site.assets_path }}/js/script.js"></script>
+    <script src="{{ site.assets_path }}/js/lrtk.js"></script>
+    <script src="{{ site.assets_path }}/js/prettify.js"></script>
+    {% include baidu-analytics.html %}
+    <a href="#0" class="cd-top">Top</a>
+  </body>
+</html>
