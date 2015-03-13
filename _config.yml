@@ -2,7 +2,7 @@
 title: "小明的学习笔记"
 url: "//www.cn-php.com/"
 highlighter: pygments
-paginate: 5
+paginate: 30
 author:
     name: 小明
     github: hepanming007
