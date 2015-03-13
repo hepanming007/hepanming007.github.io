@@ -10,6 +10,13 @@ layout: default
   {{ post.content | strip_html | truncatewords:50 }}
   {% endif %}
   {% endfor %}
+</div>
+<aside class="col-md-3 visible-lg visible-md">
+  {% include categories.html %}
+  {% include recently_posts.html %}
+  {% include recently_comments.html %}
+  {% include blogroll.html %}
+</aside>
 
   <!-- Pagination links -->
   <div class="pagination">
@@ -46,10 +53,3 @@ layout: default
     Next
   {% endif %}
 </div><!-- /.pagination -->
-</div>
-<aside class="col-md-3 visible-lg visible-md">
-  {% include categories.html %}
-  {% include recently_posts.html %}
-  {% include recently_comments.html %}
-  {% include blogroll.html %}
-</aside>
