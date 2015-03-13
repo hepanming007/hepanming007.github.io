@@ -25,7 +25,7 @@
         <!-- Pagination links -->
           <div class="manu">
           {% if paginator.previous_page %}
-            {% if paginator.previous_page == 0 %}
+            {% if paginator.previous_page == 1 %}
               <span class="disabled"> &lt; Pre</span>
             {% else %}
               <a href="{{ site.url }}/page{{ paginator.previous_page }}">&lt; Pre</a>
