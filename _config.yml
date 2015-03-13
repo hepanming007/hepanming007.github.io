@@ -1,6 +1,6 @@
 # Site settings
 title: "小明的学习笔记"
-url: "//blog.cn-php.com/"
+url: "//www.cn-php.com/"
 highlighter: pygments
 paginate: 5
 author:
