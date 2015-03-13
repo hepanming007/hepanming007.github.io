@@ -12,28 +12,40 @@ layout: default
   {% endfor %}
 
   <!-- Pagination links -->
-  <div class="pull-right">
-    {% if paginator.previous_page %}
+  <div class="pagination">
+  {% if paginator.previous_page %}
     {% if paginator.previous_page == 1 %}
-    <a class="btn btn-primary btn-sm" href="/">Home</a>
-    <a class="btn btn-primary btn-sm" href="/">&laquo; Prev</a>
+      <a href="{{ site.url }}" class="btn">Previous</a>
     {% else %}
-    <a class="btn btn-primary btn-sm" href="/">Home</a>
-    <a class="btn btn-primary btn-sm" href="/page{{paginator.previous_page}}/">&laquo; Prev</a>
+      <a href="{{ site.url }}/page{{ paginator.previous_page }}" class="btn">Previous</a>
     {% endif %}
-    {% else %}
-    <span><a class="btn btn-primary btn-sm disabled" href="/">Home</a></span>
-    <span><a class="btn btn-primary btn-sm disabled">&laquo; Prev</a></span>
-    {% endif %}
-    <span><a class="btn btn-primary btn-sm disabled">Page: {{paginator.page}} of {{paginator.total_pages}}</a></span>
-    {% if paginator.next_page %}
-    <a class="btn btn-primary btn-sm" href="/page{{paginator.next_page}}/">Next &raquo;</a>
-    <a class="btn btn-primary btn-sm" href="/page{{paginator.total_pages}}/">Last</a>
-    {% else if paginator.page == paginator.total_pages %}
-    <span><a class="btn btn-primary btn-sm disabled">Next &raquo;</a></span>
-    <span><a class="btn btn-primary btn-sm disabled">Last</a></span>
-    {% endif %}
-  </div>
+  {% else %}
+    Previous
+  {% endif %}
+  <ul class="inline-list">
+    <li>
+      {% if paginator.page == 1 %}
+        <span class="current-page">1</span>
+      {% else %}
+        <a href="{{ site.url }}">1</a>
+      {% endif %}
+    </li>
+    {% for count in (2..paginator.total_pages) %}
+      <li>
+        {% if count == paginator.page %}
+          <span class="current-page">{{ count }}</span>
+        {% else %}
+          <a href="{{ site.url }}/page{{ count }}">{{ count }}</a>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+  {% if paginator.next_page %}
+    <a href="{{ site.url }}/page{{ paginator.next_page }}" class="btn">Next</a>
+  {% else %}
+    Next
+  {% endif %}
+</div><!-- /.pagination -->
 </div>
 <aside class="col-md-3 visible-lg visible-md">
   {% include categories.html %}
