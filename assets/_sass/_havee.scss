@@ -363,6 +363,22 @@ img {
     }
   }
 }
+.pagination {
+	margin : 20px 10px;
+	text - align : center
+}
+.pagination ul {
+	display : inline;
+	margin - right : 10px;
+	margin - left : 10px
+}
+.pagination li {
+	padding - right : 4px;
+	padding - left : 4px
+}
+.pagination.current - page {
+	font - weight : 700
+}
 
 .footer {
   padding: 0 15px;
