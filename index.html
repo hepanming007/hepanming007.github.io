@@ -2,9 +2,16 @@
 layout: indexlayout
 ---
 <div class="col-md-9">
-
-	
- 
+	<div class="panel panel-default">
+		<div class="panel-heading">
+		  <h3 class="panel-title">博文列表</h3>
+		</div>
+		  <ul class="list-group"> 
+		  {% for post in paginator.posts %}
+		   <a href="{{ post.url }}">{{ post.title } class="list-group-item"}</a>
+		  {% endfor %}
+		   </ul>
+	</div>
 </div>
 <aside class="col-md-3 visible-lg visible-md">
   {% include categories.html %}
