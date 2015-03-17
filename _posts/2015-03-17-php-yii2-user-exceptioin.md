@@ -25,7 +25,7 @@ class ErrorHandler extends \yii\base\ErrorHandler{
 }
 </pre>
 
-视图文件
+视图文件@app/views/errorHandler/error.php
 
 <pre class="prettyprint">
 $message = [
