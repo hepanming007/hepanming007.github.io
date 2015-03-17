@@ -6,17 +6,15 @@ tags: php,yii2,异常处理
 description: yii2异常处理
 ---
  
-## 无废话Yii2自定义异常处理
 
-**1-1 步骤**  
-1.创建自定义errorHandler
+###1.创建自定义errorHandler
 
  $config['components'][
    'errorHandler' => [
         'class'=>'app\components\exception\ErrorHandler'
   ],
  ]
-2.web.php 配置里头添加错误处理errorHandler
+###2.web.php 配置里头添加错误处理errorHandler
 
 <pre class="prettyprint">
 namespace app\components\exception;
@@ -45,7 +43,7 @@ $message = [
 print_r($message);
 </pre>
 
-3.自定义异常
+###3.自定义异常
 
 <pre class="prettyprint">
 namespace app\components\exception;
@@ -70,7 +68,7 @@ class FileException extends UserException{
     }
 }
 </pre>
-4.抛异常
+###4.抛异常
 
 <pre class="prettyprint">
 namespace app\controllers;
