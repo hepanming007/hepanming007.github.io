@@ -9,16 +9,6 @@ description: yii2异常处理
 
 ###1.创建自定义errorHandler
 <pre class="prettyprint">
- $config=[
-   'components'=>
-     'errorHandler' => [
-        'class'=>'app\components\exception\ErrorHandler'
- ]
-</pre>
-
-###2.web.php 配置里头添加错误处理errorHandler
-
-<pre class="prettyprint">
 namespace app\components\exception;
 use Yii;
 class ErrorHandler extends \yii\base\ErrorHandler{
@@ -34,6 +24,17 @@ class ErrorHandler extends \yii\base\ErrorHandler{
     }
 }
 </pre>
+
+
+###2.web.php 配置里头添加错误处理errorHandler
+<pre class="prettyprint">
+ $config=[
+   'components'=>
+     'errorHandler' => [
+        'class'=>'app\components\exception\ErrorHandler'
+ ]
+</pre>
+
 
 视图文件
 
