@@ -18,9 +18,7 @@ description: yii2异常处理
 2.web.php 配置里头添加错误处理errorHandler
 <pre class="prettyprint">
 namespace app\components\exception;
-
 use Yii;
-
 class ErrorHandler extends \yii\base\ErrorHandler{
 
     public $errorView = '@app/views/errorHandler/error.php';
