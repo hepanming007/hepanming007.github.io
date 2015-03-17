@@ -25,17 +25,6 @@ class ErrorHandler extends \yii\base\ErrorHandler{
 }
 </pre>
 
-
-###2.web.php 配置里头添加错误处理errorHandler
-<pre class="prettyprint">
- $config=[
-   'components'=>
-     'errorHandler' => [
-        'class'=>'app\components\exception\ErrorHandler'
- ]
-</pre>
-
-
 视图文件
 
 <pre class="prettyprint">
@@ -44,6 +33,15 @@ $message = [
     'msg'=>$exception->getMessage(),
 ];
 print_r($message);
+</pre>
+
+###2.web.php 配置里头添加错误处理errorHandler
+<pre class="prettyprint">
+ $config=[
+   'components'=>
+     'errorHandler' => [
+        'class'=>'app\components\exception\ErrorHandler'
+ ]
 </pre>
 
 ###3.自定义异常
