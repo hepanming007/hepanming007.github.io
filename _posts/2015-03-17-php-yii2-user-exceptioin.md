@@ -15,6 +15,7 @@ description: yii2异常处理
   ],
  ]
  </pre>
+ 
 ###2.web.php 配置里头添加错误处理errorHandler
 
 <pre class="prettyprint">
