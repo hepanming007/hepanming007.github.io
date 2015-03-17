@@ -88,9 +88,9 @@ class ExceptionController extends Controller{
 </pre>
 ###5.访问测试
 
-  index.php?r=exception/test
-   Array
-  (
-      [code] => 2000
-      [msg] => 文件超出大小
-  )
+    index.php?r=exception/test
+     Array
+    (
+        [code] => 2000
+        [msg] => 文件超出大小
+    )
