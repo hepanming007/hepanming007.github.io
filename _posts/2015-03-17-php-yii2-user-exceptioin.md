@@ -10,12 +10,14 @@ description: yii2异常处理
 
 **1-1 步骤**  
 1.创建自定义errorHandler
-        $config['components'][
-         'errorHandler' => [
-              'class'=>'app\components\exception\ErrorHandler'
-        ],
-       ]
+
+ $config['components'][
+   'errorHandler' => [
+        'class'=>'app\components\exception\ErrorHandler'
+  ],
+ ]
 2.web.php 配置里头添加错误处理errorHandler
+
 <pre class="prettyprint">
 namespace app\components\exception;
 use Yii;
@@ -34,6 +36,7 @@ class ErrorHandler extends \yii\base\ErrorHandler{
 </pre>
 
 视图文件
+
 <pre class="prettyprint">
 $message = [
     'code'=>$exception->getCode(),
@@ -41,7 +44,9 @@ $message = [
 ];
 print_r($message);
 </pre>
+
 3.自定义异常
+
 <pre class="prettyprint">
 namespace app\components\exception;
 use yii\base\UserException;
@@ -66,6 +71,7 @@ class FileException extends UserException{
 }
 </pre>
 4.抛异常
+
 <pre class="prettyprint">
 namespace app\controllers;
 use yii;
