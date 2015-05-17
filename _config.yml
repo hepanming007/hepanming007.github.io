@@ -1,6 +1,6 @@
 # Site settings
-title: "小明的学习笔记"
-url: "//www.cn-php.com/"
+title: "xiaoming"
+url: "//www.xiaoming.work/"
 highlighter: pygments
 paginate: 30
 author:
