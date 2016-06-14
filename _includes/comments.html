@@ -1,18 +1,16 @@
-<div id="comments">
- <!--高速版，加载速度快，使用前需测试页面的兼容性-->
-<div id="SOHUCS"></div>
-<script>
-  (function(){
-    var appid = 'cyrCvSV3z',
-    conf = 'prod_0db77df5fa75687cf6a775a8ee4a4dcc';
-    var doc = document,
-    s = doc.createElement('script'),
-    h = doc.getElementsByTagName('head')[0] || doc.head || doc.documentElement;
-    s.type = 'text/javascript';
-    s.charset = 'utf-8';
-    s.src =  'http://assets.changyan.sohu.com/upload/changyan.js?conf='+ conf +'&appid=' + appid;
-    h.insertBefore(s,h.firstChild);
-    window.SCS_NO_IFRAME = true;
-  })()
-</script>                
-</div>
+<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="请将此处替换成文章在你的站点中的ID" data-title="请替换成文章的标题" data-url="请替换成文章的网址"></div>
+<!-- 多说评论框 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"xiaomingwork"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+<!-- 多说公共JS代码 end -->
